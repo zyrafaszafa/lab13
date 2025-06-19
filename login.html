@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl" class="flex items-center justify-center h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logowanie • SupaBlog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <main class="max-w-md w-full p-6 space-y-6">
+      <h1 class="text-center text-2xl font-bold">Zaloguj się</h1>
+
+      <form id="login-form" class="space-y-4 p-6 bg-white rounded-xl shadow">
+        <label class="block">
+          <input
+            class="w-full rounded-md border p-2"
+            placeholder="Email"
+            required
+            type="email"
+            name="email"
+          />
+          <span class="sr-only">Email</span>
+        </label>
+
+        <label class="block">
+          <input
+            class="w-full rounded-md border p-2"
+            placeholder="Hasło"
+            required
+            type="password"
+            name="password"
+          />
+          <span class="sr-only">Hasło</span>
+        </label>
+
+        <button
+          type="submit"
+          class="w-full rounded-md bg-indigo-600 py-2 text-white transition hover:bg-indigo-700"
+        >
+          Zaloguj
+        </button>
+      </form>
+
+      <p class="text-center text-sm text-gray-500">
+        Testowy użytkownik: <code>test@test.pl</code> / <code>qweqwe123</code>
+      </p>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
